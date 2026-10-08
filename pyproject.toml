@@ -1,7 +1,7 @@
 [project]
 name = "biblia"
 version = "0.1.0"
-description = "Add your description here"
+description = "Bíblia via terminal para consulta"
 readme = "README.md"
 authors = [
     { name = "Wanderlei Pereira", email = "devwanderlei@gmail.com" }
