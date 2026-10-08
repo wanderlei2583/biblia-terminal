@@ -16,7 +16,7 @@ classifiers = [
 ]
 
 [project.scripts]
-biblia = "biblia:main"
+bb = "bb.cli:run"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
