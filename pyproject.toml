@@ -1,5 +1,5 @@
 [project]
-name = "biblia"
+name = "bb-biblia"
 version = "0.1.0"
 description = "Bíblia via terminal para consulta"
 readme = "README.md"
@@ -11,8 +11,8 @@ requires-python = ">=3.14"
 dependencies = []
 classifiers = [
   "Environment :: Console",
-  "Natural Language :: Portuguese (Brazilan)",
-  "Programming language :: Python :: 3",
+  "Natural Language :: Portuguese (Brazilian)",
+  "Programming Language :: Python :: 3",
 ]
 
 [project.scripts]
@@ -33,3 +33,19 @@ dev = [
     "pytest-cov>=7.1.0",
     "ruff>=0.16.10",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bb"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "--cov=bb --cov-report=term-missing"

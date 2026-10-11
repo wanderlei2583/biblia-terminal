@@ -71,7 +71,7 @@ wheels = [
 ]
 
 [[package]]
-name = "biblia"
+name = "bb-biblia"
 version = "0.1.0"
 source = { editable = "." }
 
